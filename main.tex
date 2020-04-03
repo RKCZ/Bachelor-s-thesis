@@ -1,0 +1,146 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Vzor pro sazbu kvalifikační práce
+%
+% Západočeská univerzita v Plzni
+% Fakulta aplikovaných věd
+% Katedra informatiky a výpočetní techniky
+%
+% Petr Lobaz, lobaz@kiv.zcu.cz, 2016/03/14
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Možné jazyky práce: czech, english
+% Možné typy práce: BP (bakalářská), DP (diplomová)
+\documentclass[english,BP]{thesiskiv}
+
+% Definujte údaje pro vstupní strany
+%
+% Jméno a příjmení; kvůli textu prohlášení určete, 
+% zda jde o mužské, nebo ženské jméno.
+\author{Roman Kalivoda}
+\declarationmale
+
+%alternativa: 
+%\declarationfemale
+
+% Název práce
+\title{Extension of neural network architecture}
+
+% 
+% Texty abstraktů (anglicky, česky)
+%
+\abstracttexten{The text of the abstract (in English). It contains the English translation of the thesis title and a short description of the thesis.}
+
+\abstracttextcz{Text abstraktu (česky). Obsahuje krátkou anotaci (cca 10 řádek) v češtině. Budete ji potřebovat i při vyplňování údajů o bakalářské práci ve STAGu. Český i anglický abstrakt by měly být na stejné stránce a měly by si obsahem co možná nejvíce odpovídat (samozřejmě není možný doslovný překlad!).
+}
+
+% Na titulní stranu a do textu prohlášení se automaticky vkládá 
+% aktuální rok, resp. datum. Můžete je změnit:
+%\titlepageyear{2016}
+%\declarationdate{1. března 2016}
+
+% Ve zvláštních případech je možné ovlivnit i ostatní texty:
+%
+%\university{Západočeská univerzita v Plzni}
+%\faculty{Fakulta aplikovaných věd}
+%\department{Katedra informatiky a výpočetní techniky}
+%\subject{Bakalářská práce}
+%\titlepagetown{Plzeň}
+%\declarationtown{Plzni}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% DODATEČNÉ BALÍČKY PRO SAZBU
+% Jejich užívání či neužívání záleží na libovůli autora 
+% práce
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% for inserting landscape oriented pages
+\usepackage{pdflscape}
+
+% Enables long table to be split
+\usepackage{longtable}
+
+% More adjustable table environment
+\usepackage{tabularx}
+
+% balík pro import dílčích .tex souborů do hlavního
+\usepackage{import}
+
+\usepackage{csquotes}
+
+% Zařadit literaturu do obsahu
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+
+% Umožňuje vkládání obrázků
+\usepackage[pdftex]{graphicx}
+
+% SVG image support
+\usepackage{svg}
+
+% To rotate the appendices
+\usepackage{rotating}
+
+\graphicspath{ {./images/} }
+
+% Odkazy v PDF jsou aktivní; navíc se automaticky vkládá
+% balíček 'url', který umožňuje např. dělení slov
+% uvnitř URL
+\usepackage[pdftex]{hyperref}
+\hypersetup{colorlinks=true,
+  unicode=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black,
+  bookmarksopen=true}
+
+% Při používání citačního stylu csplainnatkiv
+% (odvozen z csplainnat, http://repo.or.cz/w/csplainnat.git)
+% lze snadno modifikovat vzhled citací v textu
+\usepackage[backend=biber, style=ACM-Reference-Format]{biblatex}
+
+\addbibresource{references.bib}
+%\usepackage[numbers,sort&compress]{natbib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% VLASTNÍ TEXT PRÁCE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%
+\maketitle
+\tableofcontents
+
+\chapter{Introduction}
+% V souboru \texttt{literatura.bib} jsou uvedeny příklady, jak citovat knihu \cite{KnuthAOCP2}, článek v časopisu \cite{Hoare1961}, webovou stránku \cite{Graphics2D}.
+\input{chapters/introduction}
+
+\chapter{Comparison of available simulation platforms}
+\input{chapters/simulator-comparison}
+
+\chapter{Overview of other used libraries}
+\input{chapters/library-overview}
+
+\appendix
+\input{appendices/PyNN_architecture}
+\input{appendices/community_of_the_simulators}
+\input{appendices/documentation_of_the_simulators}
+\input{appendices/computation_features_of_the_spiking_simulators}
+% 
+% PRO ANGLICKOU SAZBU JE NUTNÉ ZMĚNIT
+% CITAČNÍ STYL!
+%
+\emergencystretch=1em
+
+\printbibliography[
+heading=bibintoc
+]
+
+% \bibliographystyle{ACM-Reference-Format}
+% {\raggedright\small
+% \bibliography{literature}
+% }
+
+\end{document}

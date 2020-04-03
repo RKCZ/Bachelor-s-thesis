@@ -1,0 +1,524 @@
+
+@article{bekolayNengoPythonTool2014,
+  title = {Nengo: A {{Python}} Tool for Building Large-Scale Functional Brain Models},
+  shorttitle = {Nengo},
+  author = {Bekolay, Trevor and Bergstra, James and Hunsberger, Eric and DeWolf, Travis and Stewart, Terrence C. and Rasmussen, Daniel and Choo, Xuan and Voelker, Aaron and Eliasmith, Chris},
+  date = {2014},
+  journaltitle = {Frontiers in Neuroinformatics},
+  shortjournal = {Front. Neuroinform.},
+  volume = {7},
+  pages = {48},
+  issn = {1662-5196},
+  doi = {10.3389/fninf.2013.00048},
+  url = {https://www.frontiersin.org/articles/10.3389/fninf.2013.00048/full},
+  urldate = {2020-03-11},
+  abstract = {Neuroscience currently lacks a comprehensive theory of how cognitive processes can be implemented in a biological substrate. The Neural Engineering Framework (NEF) proposes one such theory, but has not yet gathered significant empirical support, partly due to the technical challenge of building and simulating large-scale models with the NEF. Nengo is a software tool that can be used to build and simulate large-scale models based on the NEF; currently, it is the primary resource for both teaching how the NEF is used, and for doing research that generates specific NEF models to explain experimental data. Nengo 1.4, which was implemented in Java, was used to create Spaun, the world’s largest functional brain model (Eliasmith et al., 2012). Simulating Spaun highlighted limitations in Nengo 1.4’s ability to support model construction with simple syntax, to simulate large models quickly, and to collect large amounts of data for subsequent analysis. This paper describes Nengo 2.0, which is implemented in Python and overcomes these limitations. It uses simple and extendable syntax, simulates a benchmark model on the scale of Spaun 50 times faster than Nengo 1.4, and has a flexible mechanism for collecting simulation results.},
+  keywords = {Control theory,Nengo,neural engineering framework,Neuroscience,python,simulation,theoretical neuroscience},
+  langid = {english}
+}
+
+@article{boahenPointtopointConnectivity00,
+  title = {Point-to-Point Connectivity between Neuromorphic Chips Using Address Events},
+  author = {Boahen, K.A.},
+  date = {2000-05},
+  journaltitle = {IEEE Transactions on Circuits and Systems II: Analog and Digital Signal Processing},
+  volume = {47},
+  pages = {416--434},
+  issn = {1558-125X},
+  doi = {10.1109/82.842110},
+  abstract = {This paper discusses connectivity between neuromorphic chips, which use the timing of fixed-height fixed-width pulses to encode information. Address-events (log/sub 2/(N)-bit packets that uniquely identify one of N neurons) are used to transmit these pulses in real time on a random-access time-multiplexed communication channel. Activity is assumed to consist of neuronal ensembles-spikes clustered in space and in time. This paper quantifies tradeoffs faced in allocating bandwidth, granting access, and queuing, as well as throughput requirements, and concludes that an arbitered channel design is the best choice. The arbitered channel is implemented with a formal design methodology for asynchronous digital VLSI CMOS systems, after introducing the reader to this top-down synthesis technique. Following the evolution of three generations of designs, it is shown how the overhead of arbitrating, and encoding and decoding, can be reduced in area (from N to /spl radic/N) by organizing neurons into rows and columns, and reduced in time (from log/sub 2/(N) to 2) by exploiting locality in the arbiter tree and in the row-column architecture, and clustered activity. Throughput is boosted by pipelining and by reading spikes in parallel. Simple techniques that reduce crosstalk in these mixed analog-digital systems are described.},
+  keywords = {address events,arbiter tree,arbitered channel design,arbitrating,asynchronous circuits,asynchronous digital VLSI CMOS systems,Bandwidth,bandwidth allocation,clustered activity,CMOS digital integrated circuits,Communication channels,crosstalk,crosstalk reduction,decoding,Decoding,Design methodology,encoding,fixed-height fixed-width pulses,formal design methodology,logic design,mixed analog-digital systems,mixed analogue-digital integrated circuits,neural chips,neuromorphic chips,Neuromorphics,Neurons,Organizing,parallel processing,pipeline processing,pipelining,point-to-point connectivity,queuing,random-access time-multiplexed communication channel,row-column architecture,Throughput,throughput requirements,timing,Timing,top-down synthesis technique,Very large scale integration,VLSI},
+  number = {5}
+}
+
+@online{Brian,
+  title = {Brian},
+  journaltitle = {Brian–Google Groups},
+  url = {https://groups.google.com/forum/#!aboutgroup/briansupport},
+  urldate = {2020-03-11},
+  label = {BGG},
+  type = {Discussion Group}
+}
+
+@thesis{bruderleNeuroscientificModelingMixedSignal2009,
+  title = {Neuroscientific {{Modeling}} with a {{Mixed}}-{{Signal VLSI Hardware System}}},
+  author = {Brüderle, Daniel},
+  date = {2009},
+  institution = {{University of Heidelberg}},
+  doi = {10.11588/heidok.00009656},
+  url = {http://archiv.ub.uni-heidelberg.de/volltextserver/9656/},
+  urldate = {2020-03-11},
+  abstract = {Modeling networks of spiking neurons is a common scientific method that helps to understand how biological neural systems represent, process and store information. But the simulation of large-scale models on machines based on the Turing paradigm is subject to performance limitations, since it suffers from an intrinsic discrepancy to the massive parallelism of neural processing in the brain. Following an alternative approach, neuromorphic engineering implements the structure and function of biological neural systems in analog or analog-digital VLSI devices. Neuron and synapse circuits represent physical models that evolve in parallel and in continuous time. Therefore, neuromorphic systems can overcome limitations of pure software approaches in terms of speed and scalability. Recent developments aim at the realization of large-scale, massively accelerated and highly configurable neuromorphic architectures. This thesis presents a novel methodological framework that renders possible the beneficial utilization of such devices as neuroscientific modeling tools. In a comprehensive study, it describes, tests and characterizes an existing prototype in detail. It presents policies for the biological interpretation of the hardware output and techniques for the calibration of the chip. The thesis introduces a dedicated software framework that implements these methods and integrates the hardware interface into a simulator-independent modeling language, which is also supported by various established software simulators. This allows to port experiment descriptions between hardware and software simulators, to compare generated output data and consequently to verify the hardware model. The functionality of the translation methods, the calibration techniques and the verification framework are shown in various experiments both on the single cell and on the network level.},
+  langid = {english},
+  type = {Dissertation}
+}
+
+@article{caoSpikingDeepConvolutional2015,
+  title = {Spiking {{Deep Convolutional Neural Networks}} for {{Energy}}-{{Efficient Object Recognition}}},
+  author = {Cao, Yongqiang and Chen, Yang and Khosla, Deepak},
+  date = {2015-05-01},
+  journaltitle = {International Journal of Computer Vision},
+  shortjournal = {Int J Comput Vis},
+  volume = {113},
+  pages = {54--66},
+  issn = {1573-1405},
+  doi = {10.1007/s11263-014-0788-3},
+  url = {https://doi.org/10.1007/s11263-014-0788-3},
+  urldate = {2020-03-11},
+  abstract = {Deep-learning neural networks such as convolutional neural network (CNN) have shown great potential as a solution for difficult vision problems, such as object recognition. Spiking neural networks (SNN)-based architectures have shown great potential as a solution for realizing ultra-low power consumption using spike-based neuromorphic hardware. This work describes a novel approach for converting a deep CNN into a SNN that enables mapping CNN to spike-based hardware architectures. Our approach first tailors the CNN architecture to fit the requirements of SNN, then trains the tailored CNN in the same way as one would with CNN, and finally applies the learned network weights to an SNN architecture derived from the tailored CNN. We evaluate the resulting SNN on publicly available Defense Advanced Research Projects Agency (DARPA) Neovision2 Tower and CIFAR-10 datasets and show similar object recognition accuracy as the original CNN. Our SNN implementation is amenable to direct mapping to spike-based neuromorphic hardware, such as the ones being developed under the DARPA SyNAPSE program. Our hardware mapping analysis suggests that SNN implementation on such spike-based hardware is two orders of magnitude more energy-efficient than the original CNN implementation on off-the-shelf FPGA-based hardware.},
+  langid = {english},
+  number = {1}
+}
+
+@book{carnevaleNEURONBook06,
+  title = {The {{NEURON Book}}},
+  author = {Carnevale, Nicholas T. and Hines, Michael L.},
+  date = {2006-01-12},
+  publisher = {{Cambridge University Press}},
+  abstract = {The authoritative reference on NEURON, the simulation environment for modeling biological neurons and neural networks that enjoys wide use in the experimental and computational neuroscience communities. This book shows how to use NEURON to construct and apply empirically based models. Written primarily for neuroscience investigators, teachers, and students, it assumes no previous knowledge of computer programming or numerical methods. Readers with a background in the physical sciences or mathematics, who have some knowledge about brain cells and circuits and are interested in computational modeling, will also find it helpful. The NEURON Book covers material that ranges from the inner workings of this program, to practical considerations involved in specifying the anatomical and biophysical properties that are to be represented in models. It uses a problem-solving approach, with many working examples that readers can try for themselves.},
+  isbn = {978-1-139-44783-6},
+  keywords = {Computers / Desktop Applications / Design & Graphics,Medical / Neuroscience,Science / Life Sciences / Neuroscience},
+  langid = {english},
+  pagetotal = {399}
+}
+
+@software{cholletKeras15,
+  title = {Keras},
+  author = {Chollet, François},
+  date = {2015},
+  url = {https://keras.io},
+  urldate = {2020-03-30}
+}
+
+@inproceedings{cireganMulticolumnDeep12,
+  title = {Multi-Column Deep Neural Networks for Image Classification},
+  booktitle = {2012 {{IEEE Conference}} on {{Computer Vision}} and {{Pattern Recognition}}},
+  author = {Ciregan, Dan and Meier, Ueli and Schmidhuber, Jürgen},
+  date = {2012-06},
+  pages = {3642--3649},
+  issn = {1063-6919},
+  doi = {10.1109/CVPR.2012.6248110},
+  abstract = {Traditional methods of computer vision and machine learning cannot match human performance on tasks such as the recognition of handwritten digits or traffic signs. Our biologically plausible, wide and deep artificial neural network architectures can. Small (often minimal) receptive fields of convolutional winner-take-all neurons yield large network depth, resulting in roughly as many sparsely connected neural layers as found in mammals between retina and visual cortex. Only winner neurons are trained. Several deep neural columns become experts on inputs preprocessed in different ways; their predictions are averaged. Graphics cards allow for fast training. On the very competitive MNIST handwriting benchmark, our method is the first to achieve near-human performance. On a traffic sign recognition benchmark it outperforms humans by a factor of two. We also improve the state-of-the-art on a plethora of common image classification benchmarks.},
+  eventtitle = {2012 {{IEEE Conference}} on {{Computer Vision}} and {{Pattern Recognition}}},
+  keywords = {artificial neural network architectures,Benchmark testing,Computer architecture,computer vision,convolutional winner-take-all neurons,Error analysis,fast training,graphics cards,Graphics processing unit,graphics processing units,handwritten character recognition,handwritten digits recognition,human performance,image classification,image recognition,learning (artificial intelligence),machine learning,MNIST handwriting benchmark,multicolumn deep neural networks,neural nets,Neurons,retina,sparsely connected neural layers,traffic sign recognition benchmark,traffic signs,Training,visual cortex}
+}
+
+@article{courbariauxBinarizedNeural16,
+  title = {Binarized {{Neural Networks}}: {{Training Deep Neural Networks}} with {{Weights}} and {{Activations Constrained}} to +1 or -1},
+  shorttitle = {Binarized {{Neural Networks}}},
+  author = {Courbariaux, Matthieu and Hubara, Itay and Soudry, Daniel and El-Yaniv, Ran and Bengio, Yoshua},
+  date = {2016-03-17},
+  url = {http://arxiv.org/abs/1602.02830},
+  urldate = {2020-03-25},
+  abstract = {We introduce a method to train Binarized Neural Networks (BNNs) - neural networks with binary weights and activations at run-time. At training-time the binary weights and activations are used for computing the parameters gradients. During the forward pass, BNNs drastically reduce memory size and accesses, and replace most arithmetic operations with bit-wise operations, which is expected to substantially improve power-efficiency. To validate the effectiveness of BNNs we conduct two sets of experiments on the Torch7 and Theano frameworks. On both, BNNs achieved nearly state-of-the-art results over the MNIST, CIFAR-10 and SVHN datasets. Last but not least, we wrote a binary matrix multiplication GPU kernel with which it is possible to run our MNIST BNN 7 times faster than with an unoptimized GPU kernel, without suffering any loss in classification accuracy. The code for training and running our BNNs is available on-line.},
+  archivePrefix = {arXiv},
+  eprint = {1602.02830},
+  eprinttype = {arxiv},
+  keywords = {Computer Science - Machine Learning},
+  primaryClass = {cs}
+}
+
+@article{davisonPyNNCommonInterface2009,
+  title = {{{PyNN}}: A Common Interface for Neuronal Network Simulators},
+  shorttitle = {{{PyNN}}},
+  author = {Davison, Andrew P. and Brüderle, Daniel and Eppler, Jochen M. and Kremkow, Jens and Muller, Eilif and Pecevski, Dejan and Perrinet, Laurent and Yger, Pierre},
+  date = {2009},
+  journaltitle = {Frontiers in Neuroinformatics},
+  shortjournal = {Front. Neuroinform.},
+  volume = {2},
+  pages = {11},
+  issn = {1662-5196},
+  doi = {10.3389/neuro.11.011.2008},
+  url = {https://www.frontiersin.org/articles/10.3389/neuro.11.011.2008/full},
+  urldate = {2020-03-11},
+  abstract = {Computational neuroscience has produced a diversity of software for simulations of networks of spiking neurons, with both negative and positive consequences. On the one hand, each simulator uses its own programming or configuration language, leading to considerable difficulty in porting models from one simulator to another. This impedes communication between investigators and makes it harder to reproduce and build on the work of others. On the other hand, simulation results can be cross-checked between different simulators, giving greater confidence in their correctness, and each simulator has different optimizations, so the most appropriate simulator can be chosen for a given modelling task. A common programming interface to multiple simulators would reduce or eliminate the problems of simulator diversity while retaining the benefits. PyNN is such an interface, making it possible to write a simulation script once, using the Python programming language, and run it without modification on any supported simulator (currently NEURON, NEST, PCSIM, Brian and the Heidelberg VLSI neuromorphic hardware). PyNN increases the productivity of neuronal network modelling by providing high-level abstraction, by promoting code sharing and reuse, and by providing a foundation for simulator-agnostic analysis, visualization, and data-management tools. PyNN increases the reliability of modelling studies by making it much easier to check results on multiple simulators. PyNN is open-source software and is available from http://neuralensemble.org/PyNN.},
+  keywords = {computational neuroscience,interoperability,large-scale models,Parallel Computing,python,reproducibility,simulation,translation},
+  langid = {english}
+}
+
+@book{eliasmithHowBuild13,
+  title = {How to {{Build}} a {{Brain}}: {{A Neural Architecture}} for {{Biological Cognition}}},
+  shorttitle = {How to {{Build}} a {{Brain}}},
+  author = {Eliasmith, Chris},
+  date = {2013-06-27},
+  publisher = {{Oxford University Press}},
+  abstract = {One goal of researchers in neuroscience, psychology, and artificial intelligence is to build theoretical models that are able to explain the flexibility and adaptiveness of biological systems. How to build a brain provides a detailed guided exploration of a new cognitive architecture that takes biological detail seriously, while addressing cognitive phenomena. The Semantic Pointer Architecture (SPA) introduced in this book provides a set of tools for constructing a wide range of biologically constrained perceptual, cognitive, and motor models. Examples of such models are provided, and they are shown to explain a wide range of data including single cell recordings, neural population activity, reaction times, error rates, choice behavior, and fMRI signals. Each of these models introduces a major feature of biological cognition addressed in the book, including semantics, syntax, control, learning, and memory. These models are not introduced as independent considerations of brain function, but instead integrated to give rise to what is currently the world's largest functional brain model. The last half of this book compares the Semantic Pointer Architecture with the current state-of-the-art, addressing issues of theory construction in the behavioral sciences, semantic compositionality, and scalability, among other considerations. The book concludes with a discussion of conceptual challenges raised by this architecture, and identifies several outstanding challenges for this, and other, cognitive architectures. Along the way, the book considers neural coding, concept representation, neural dynamics, working memory, neuroanatomy, reinforcement learning, and spike-timing dependent plasticity. The book includes 8 detailed, hands-on tutorials exploiting the free Nengo neural simulation environment, providing practical experience with the concepts and models presented throughout.},
+  isbn = {978-0-19-979454-6},
+  keywords = {Medical / Neuroscience,Psychology / Cognitive Psychology & Cognition},
+  langid = {english},
+  pagetotal = {476}
+}
+
+@article{furberSpiNNakerProject14,
+  title = {The {{SpiNNaker Project}}},
+  author = {Furber, Steve B. and Galluppi, Francesco and Temple, Steve and Plana, Luis A.},
+  date = {2014-05},
+  journaltitle = {Proceedings of the IEEE},
+  volume = {102},
+  pages = {652--665},
+  issn = {1558-2256},
+  doi = {10.1109/JPROC.2014.2304638},
+  abstract = {The spiking neural network architecture (SpiNNaker) project aims to deliver a massively parallel million-core computer whose interconnect architecture is inspired by the connectivity characteristics of the mammalian brain, and which is suited to the modeling of large-scale spiking neural networks in biological real time. Specifically, the interconnect allows the transmission of a very large number of very small data packets, each conveying explicitly the source, and implicitly the time, of a single neural action potential or “spike.” In this paper, we review the current state of the project, which has already delivered systems with up to 2500 processors, and present the real-time event-driven programming model that supports flexible access to the resources of the machine and has enabled its use by a wide range of collaborators around the world.},
+  keywords = {Brain modeling,Computational modeling,Computer architecture,data packets,interconnect architecture,mammalian brain,multicast algorithms,multiprocessing systems,multiprocessor interconnection networks,Multitasking,neural net architecture,neural network hardware,Neural networks,Neuroscience,parallel million-core computer,parallel processing,parallel programming,Parallel programming,Program processors,real-time event-driven programming model,real-time systems,spiking neural network architecture,SpiNNaker project},
+  number = {5}
+}
+
+@incollection{goodfellowGenerativeAdversarialNets2014,
+  title = {Generative {{Adversarial Nets}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}} 27},
+  author = {Goodfellow, Ian and Pouget-Abadie, Jean and Mirza, Mehdi and Xu, Bing and Warde-Farley, David and Ozair, Sherjil and Courville, Aaron and Bengio, Yoshua},
+  editor = {Ghahramani, Z. and Welling, M. and Cortes, C. and Lawrence, N. D. and Weinberger, K. Q.},
+  date = {2014},
+  pages = {2672--2680},
+  publisher = {{Curran Associates, Inc.}},
+  url = {http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf},
+  urldate = {2020-03-11}
+}
+
+@inproceedings{jiaCaffeConvolutional14,
+  title = {Caffe: {{Convolutional Architecture}} for {{Fast Feature Embedding}}},
+  shorttitle = {Caffe},
+  booktitle = {Proceedings of the 22nd {{ACM}} International Conference on {{Multimedia}}},
+  author = {Jia, Yangqing and Shelhamer, Evan and Donahue, Jeff and Karayev, Sergey and Long, Jonathan and Girshick, Ross and Guadarrama, Sergio and Darrell, Trevor},
+  date = {2014-11-03},
+  pages = {675--678},
+  publisher = {{Association for Computing Machinery}},
+  location = {{Orlando, Florida, USA}},
+  doi = {10.1145/2647868.2654889},
+  url = {https://doi.org/10.1145/2647868.2654889},
+  urldate = {2020-03-30},
+  abstract = {Caffe provides multimedia scientists and practitioners with a clean and modifiable framework for state-of-the-art deep learning algorithms and a collection of reference models. The framework is a BSD-licensed C++ library with Python and MATLAB bindings for training and deploying general-purpose convolutional neural networks and other deep models efficiently on commodity architectures. Caffe fits industry and internet-scale media needs by CUDA GPU computation, processing over 40 million images a day on a single K40 or Titan GPU (approx 2 ms per image). By separating model representation from actual implementation, Caffe allows experimentation and seamless switching among platforms for ease of development and deployment from prototyping machines to cloud environments. Caffe is maintained and developed by the Berkeley Vision and Learning Center (BVLC) with the help of an active community of contributors on GitHub. It powers ongoing research projects, large-scale industrial applications, and startup prototypes in vision, speech, and multimedia.},
+  isbn = {978-1-4503-3063-3},
+  keywords = {computer vision,machine learning,neural networks,open source,parallel computation},
+  series = {{{MM}} '14}
+}
+
+@software{jordanNEST182019,
+  title = {{{NEST}} 2.18.0},
+  author = {Jordan, Jakob and Mørk, Håkon and Vennemo, Stine Brekke and Terhorst, Dennis and Peyser, Alexander and Ippen, Tammo and Deepu, Rajalekshmi and Eppler, Jochen Martin and van Meegen, Alexander and Kunkel, Susanne and Sinha, Ankur and Fardet, Tanguy and Diaz, Sandra and Morrison, Abigail and Schenck, Wolfram and Dahmen, David and Pronold, Jari and Stapmanns, Jonas and Trensch, Guido and Spreizer, Sebastian and Mitchell, Jessica and Graber, Steffen and Senk, Johanna and Linssen, Charl and Hahne, Jan and Serenko, Alexey and Naoumenko, Daniel and Thomson, Eric and Kitayama, Itaru and Berns, Sebastian and Plesser, Hans Ekkehard},
+  date = {2019-06-27},
+  url = {https://doi.org/10.5281/zenodo.2605422},
+  abstract = {NEST is a simulator for spiking neural network models that focuses on the dynamics, size and structure of neural systems rather than on the exact morphology of individual neurons. For further information, visit http://www.nest-simulator.org. The release notes for this release are available at https://github.com/nest/nest-simulator/releases/tag/v2.18.0},
+  options = {useprefix=true},
+  version = {2.18.0}
+}
+
+@misc{julichaachenresearchallianceNESTNeuralSimulation2015,
+  title = {{{NEST}}: {{The Neural Simulation Tool}}},
+  author = {{Jülich Aachen Research Alliance}},
+  date = {2015},
+  url = {https://www.nest-simulator.org/wp-content/uploads/2015/04/JARA_NEST_final.pdf},
+  urldate = {2020-03-11}
+}
+
+@article{kalganovaBranchingMerging20,
+  title = {A {{Branching}} and {{Merging Convolutional Network}} with {{Homogeneous Filter Capsules}}},
+  author = {Kalganova, T. and Byerly, A. and Dear, I.},
+  date = {2020}
+}
+
+@article{kimBitwiseNeural16,
+  title = {Bitwise {{Neural Networks}}},
+  author = {Kim, Minje and Smaragdis, Paris},
+  date = {2016-01-22},
+  url = {http://arxiv.org/abs/1601.06071},
+  urldate = {2020-03-25},
+  abstract = {Based on the assumption that there exists a neural network that efficiently represents a set of Boolean functions between all binary inputs and outputs, we propose a process for developing and deploying neural networks whose weight parameters, bias terms, input, and intermediate hidden layer output signals, are all binary-valued, and require only basic bit logic for the feedforward pass. The proposed Bitwise Neural Network (BNN) is especially suitable for resource-constrained environments, since it replaces either floating or fixed-point arithmetic with significantly more efficient bitwise operations. Hence, the BNN requires for less spatial complexity, less memory bandwidth, and less power consumption in hardware. In order to design such networks, we propose to add a few training schemes, such as weight compression and noisy backpropagation, which result in a bitwise network that performs almost as well as its corresponding real-valued network. We test the proposed network on the MNIST dataset, represented using binary features, and show that BNNs result in competitive performance while offering dramatic computational savings.},
+  archivePrefix = {arXiv},
+  eprint = {1601.06071},
+  eprinttype = {arxiv},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computing},
+  primaryClass = {cs}
+}
+
+@article{leeTrainingDeepSpiking2016,
+  title = {Training {{Deep Spiking Neural Networks Using Backpropagation}}},
+  author = {Lee, Jun Haeng and Delbruck, Tobi and Pfeiffer, Michael},
+  date = {2016},
+  journaltitle = {Frontiers in Neuroscience},
+  shortjournal = {Front. Neurosci.},
+  volume = {10},
+  pages = {508},
+  issn = {1662-453X},
+  doi = {10.3389/fnins.2016.00508},
+  url = {https://www.frontiersin.org/articles/10.3389/fnins.2016.00508/full},
+  urldate = {2020-03-11},
+  abstract = {Deep spiking neural networks (SNNs) hold the potential for improving the latency and energy efficiency of deep neural networks through data-driven event-based computation. However, training such networks is difficult due to the non-differentiable nature of spike events. In this paper, we introduce a novel technique, which treats the membrane potentials of spiking neurons as differentiable signals, where discontinuities at spike times are considered as noise. This enables an error backpropagation mechanism for deep SNNs that follows the same principles as in conventional deep networks, but works directly on spike signals and membrane potentials. Compared with previous methods relying on indirect training and conversion, our technique has the potential to capture the statistics of spikes more precisely. We evaluate the proposed framework on artificially generated events from the original MNIST handwritten digit benchmark, and also on the N-MNIST benchmark recorded with an event-based dynamic vision sensor, in which the proposed method reduces the error rate by a factor of more than three compared to the best previous SNN, and also achieves a higher accuracy than a conventional convolutional neural network (CNN) trained and tested on the same data. We demonstrate in the context of the MNIST task that thanks to their event-driven operation, deep SNNs (both fully connected and convolutional) trained with our method achieve accuracy equivalent with conventional neural networks. In the N-MNIST example, equivalent accuracy is achieved with about five times fewer computational operations.},
+  keywords = {backpropagation,Deep neural network,DVS,MNIST,N-MNIST,Neuromorphic,Spiking Neural network},
+  langid = {english}
+}
+
+@book{lenovereComputationalSystemsNeurobiology2012,
+  title = {Computational Systems Neurobiology},
+  author = {Le Novère, Nicolas},
+  date = {2012},
+  publisher = {{Springer Science \& Business Media}}
+}
+
+@incollection{linAccurateBinary17,
+  title = {Towards {{Accurate Binary Convolutional Neural Network}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}} 30},
+  author = {Lin, Xiaofan and Zhao, Cong and Pan, Wei},
+  editor = {Guyon, I. and Luxburg, U. V. and Bengio, S. and Wallach, H. and Fergus, R. and Vishwanathan, S. and Garnett, R.},
+  date = {2017},
+  pages = {345--353},
+  publisher = {{Curran Associates, Inc.}},
+  url = {http://papers.nips.cc/paper/6638-towards-accurate-binary-convolutional-neural-network.pdf},
+  urldate = {2020-03-25}
+}
+
+@article{maassNetworksSpikingNeurons1997,
+  title = {Networks of Spiking Neurons: {{The}} Third Generation of Neural Network Models},
+  shorttitle = {Networks of Spiking Neurons},
+  author = {Maass, Wolfgang},
+  date = {1997-12-01},
+  journaltitle = {Neural Networks},
+  shortjournal = {Neural Networks},
+  volume = {10},
+  pages = {1659--1671},
+  issn = {0893-6080},
+  doi = {10.1016/S0893-6080(97)00011-7},
+  url = {http://www.sciencedirect.com/science/article/pii/S0893608097000117},
+  urldate = {2020-03-09},
+  abstract = {The computational power of formal models for networks of spiking neurons is compared with that of other neural network models based on McCulloch Pitts neurons (i.e., threshold gates), respectively, sigmoidal gates. In particular it is shown that networks of spiking neurons are, with regard to the number of neurons that are needed, computationally more powerful than these other neural network models. A concrete biologically relevant function is exhibited which can be computed by a single spiking neuron (for biologically reasonable values of its parameters), but which requires hundreds of hidden units on a sigmoidal neural net. On the other hand, it is known that any function that can be computed by a small sigmoidal neural net can also be computed by a small network of spiking neurons. This article does not assume prior knowledge about spiking neurons, and it contains an extensive list of references to the currently available literature on computations in networks of spiking neurons and relevant results from neurobiology.},
+  keywords = {Computational complexity,Integrate-and-fire neutron,Lower bounds,Sigmoidal neural nets,Spiking neuron},
+  langid = {english},
+  number = {9}
+}
+
+@article{moucekEventrelatedPotential17,
+  title = {Event-Related Potential Data from a Guess the Number Brain-Computer Interface Experiment on School Children},
+  author = {Mouček, R. and Vařeka, L. and Prokop, T. and Štěbeták, J. and Brůha, P.},
+  date = {2017-03-28},
+  journaltitle = {Scientific Data},
+  volume = {4},
+  pages = {1--11},
+  publisher = {{Nature Publishing Group}},
+  issn = {2052-4463},
+  doi = {10.1038/sdata.2016.121},
+  url = {https://www.nature.com/articles/sdata2016121},
+  urldate = {2020-04-01},
+  abstract = {Design Type(s)   parallel group design • stimulus or stress design    Measurement Type(s)   P300 waves    Technology Type(s)   electroencephalography    Factor Type(s)   group assignment    Sample Characteristic(s)   Homo sapiens • brain            Machine-accessible metadata file describing the reported data (ISA-Tab format)},
+  issue = {1},
+  langid = {english},
+  number = {1}
+}
+
+@incollection{paszkePyTorchImperative19,
+  title = {{{PyTorch}}: {{An Imperative Style}}, {{High}}-{{Performance Deep Learning Library}}},
+  shorttitle = {{{PyTorch}}},
+  booktitle = {Advances in {{Neural Information Processing Systems}} 32},
+  author = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
+  editor = {Wallach, H. and Larochelle, H. and Beygelzimer, A. and d\textbackslash{}textquotesingle Alché-Buc, F. and Fox, E. and Garnett, R.},
+  date = {2019},
+  pages = {8026--8037},
+  publisher = {{Curran Associates, Inc.}},
+  url = {http://papers.nips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf},
+  urldate = {2020-03-30}
+}
+
+@inproceedings{pazTestInfrastructureAddressEventRepresentation2005,
+  title = {Test {{Infrastructure}} for {{Address}}-{{Event}}-{{Representation Communications}}},
+  booktitle = {Computational {{Intelligence}} and {{Bioinspired Systems}}},
+  author = {Paz, R. and Gomez-Rodriguez, F. and Rodriguez, M. A. and Linares-Barranco, A. and Jimenez, G. and Civit, A.},
+  editor = {Cabestany, Joan and Prieto, Alberto and Sandoval, Francisco},
+  date = {2005},
+  pages = {518--526},
+  publisher = {{Springer}},
+  location = {{Berlin, Heidelberg}},
+  doi = {10.1007/11494669_64},
+  abstract = {Address-Event-Representation (AER) is a communication protocol for transferring spikes between bio-inspired chips. Such systems may consist of a hierarchical structure with several chips that transmit spikes among them in real time, while performing some processing. To develop and test AER based systems it is convenient to have a set of instruments that would allow to: generate AER streams, monitor the output produced by neural chips and modify the spike stream produced by an emitting chip to adapt it to the requirements of the receiving elements. In this paper we present a set of tools that implement these functions developed in the CAVIAR EU project.},
+  isbn = {978-3-540-32106-4},
+  keywords = {Address Event,Frame Period,Protocol Line,Spike Stream,Test Infrastructure},
+  langid = {english},
+  series = {Lecture {{Notes}} in {{Computer Science}}}
+}
+
+@article{perez-carrascoMappingFrameDriven13,
+  title = {Mapping from {{Frame}}-{{Driven}} to {{Frame}}-{{Free Event}}-{{Driven Vision Systems}} by {{Low}}-{{Rate Rate Coding}} and {{Coincidence Processing}}–{{Application}} to {{Feedforward ConvNets}}},
+  author = {Pérez-Carrasco, José Antonio and Zhao, Bo and Serrano, Carmen and Acha, Begoña and Serrano-Gotarredona, Teresa and Chen, Shouchun and Linares-Barranco, Bernabé},
+  date = {2013-11},
+  journaltitle = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume = {35},
+  pages = {2706--2719},
+  issn = {1939-3539},
+  doi = {10.1109/TPAMI.2013.71},
+  abstract = {Event-driven visual sensors have attracted interest from a number of different research communities. They provide visual information in quite a different way from conventional video systems consisting of sequences of still images rendered at a given "frame rate." Event-driven vision sensors take inspiration from biology. Each pixel sends out an event (spike) when it senses something meaningful is happening, without any notion of a frame. A special type of event-driven sensor is the so-called dynamic vision sensor (DVS) where each pixel computes relative changes of light or "temporal contrast." The sensor output consists of a continuous flow of pixel events that represent the moving objects in the scene. Pixel events become available with microsecond delays with respect to "reality." These events can be processed "as they flow" by a cascade of event (convolution) processors. As a result, input and output event flows are practically coincident in time, and objects can be recognized as soon as the sensor provides enough meaningful events. In this paper, we present a methodology for mapping from a properly trained neural network in a conventional frame-driven representation to an event-driven representation. The method is illustrated by studying event-driven convolutional neural networks (ConvNet) trained to recognize rotating human silhouettes or high speed poker card symbols. The event-driven ConvNet is fed with recordings obtained from a real DVS camera. The event-driven ConvNet is simulated with a dedicated event-driven simulator and consists of a number of event-driven processing modules, the characteristics of which are obtained from individually manufactured hardware modules.},
+  keywords = {Algorithms,bioinspired vision,cameras,coincidence processing,computer vision,convolutional neural network,convolutional neural networks,Data Compression,Decision Support Techniques,dedicated event-driven simulator,DVS,Dynamic range,dynamic vision sensor,event flow processing,event-driven neural networks,event-driven processing module,event-driven representation,event-driven visual sensor,Feature extraction,feedforward ConvNets,feedforward neural nets,frame-driven representation,frame-driven vision system,frame-free event-driven vision system,high speed vision,image coding,Image Interpretation; Computer-Assisted,image representation,low-rate rate coding,neural network mapping,Neural networks,Neural Networks (Computer),Neurons,object recognition,Pattern Recognition; Automated,Sensors,spiking neural networks,temporal contrast,visual information,Visualization,Voltage control},
+  number = {11}
+}
+
+@article{pfeifferDeepLearningSpiking2018,
+  title = {Deep {{Learning With Spiking Neurons}}: {{Opportunities}} and {{Challenges}}},
+  shorttitle = {Deep {{Learning With Spiking Neurons}}},
+  author = {Pfeiffer, Michael and Pfeil, Thomas},
+  date = {2018},
+  journaltitle = {Frontiers in Neuroscience},
+  shortjournal = {Front. Neurosci.},
+  volume = {12},
+  issn = {1662-453X},
+  doi = {10.3389/fnins.2018.00774},
+  url = {https://www.frontiersin.org/articles/10.3389/fnins.2018.00774/full},
+  urldate = {2020-03-11},
+  abstract = {Spiking neural networks (SNNs) are inspired by information processing in biology, where sparse and asynchronous binary signals are communicated and processed in a massively parallel fashion. SNNs on neuromorphic hardware exhibit favorable properties such as low power consumption, fast inference, and event-driven information processing. This makes them interesting candidates for the efficient implementation of deep neural networks, the method of choice for many machine learning tasks. In this review, we address the opportunities that deep spiking networks offer and investigate in detail the challenges associated with training SNNs in a way that makes them competitive with conventional deep learning, but simultaneously allows for efficient mapping to hardware. A wide range of training methods for SNNs is presented, ranging from the conversion of conventional deep networks into SNNs, constrained training before conversion, spiking variants of backpropagation, and biologically motivated variants of STDP. The goal of our review is to define a categorization of SNN training methods, and summarize their advantages and drawbacks. We further discuss relationships between SNNs and binary networks, which are becoming popular for efficient digital hardware implementation. Neuromorphic hardware platforms have great potential to enable deep spiking networks in real-world applications. We compare the suitability of various neuromorphic systems that have been developed over the past years, and investigate potential use cases. Neuromorphic approaches and conventional machine learning should not be considered simply two solutions to the same classes of problems, instead it is possible to identify and exploit their task-specific advantages. Deep SNNs offer great opportunities to work with new types of event-based sensors, exploit temporal codes and local on-chip learning, and we have so far just scratched the surface of realizing these advantages in practical applications.},
+  keywords = {Binary networks,deep learning,Event-based computing,neural networks,neuromorphic engineering,spiking neurons},
+  langid = {english}
+}
+
+@article{plotnikovNESTMLModelingLanguage2016,
+  title = {{{NESTML}}: A Modeling Language for Spiking Neurons},
+  shorttitle = {{{NESTML}}},
+  author = {Plotnikov, Dimitri and Rumpe, Bernhard and Blundell, Inga and Ippen, Tammo and Eppler, Jochen Martin and Morrison, Abgail},
+  date = {2016-06-09},
+  url = {http://arxiv.org/abs/1606.02882},
+  urldate = {2020-03-11},
+  abstract = {Biological nervous systems exhibit astonishing complexity .Neuroscientists aim to capture this com- plexity by modeling and simulation of biological processes. Often very comple xm odels are nec- essary to depict the processes, which makes it dif fi cult to create these models. Powerful tools are thus necessary ,which enable neuroscientists to express models in acomprehensi ve and concise way and generate ef fi cient code for digital simulations. Se veral modeling languages for computational neuroscience ha ve been proposed [Gl10, Ra11]. Howe ver, as these languages seek simulator inde- pendence the ytypically only support asubset of the features desired by the modeler .Int his article, we present the modular and extensible domain speci fi cl anguage NESTML, which provides neuro- science domain concepts as fi rst-class language constructs and supports domain experts in creating neuron models for the neural simulation tool NEST .N ESTML and aset of example models are publically available on GitHub.},
+  archivePrefix = {arXiv},
+  eprint = {1606.02882},
+  eprinttype = {arxiv},
+  keywords = {Computer Science - Software Engineering}
+}
+
+@inproceedings{rueckauerConversionAnalogSpiking2018,
+  title = {Conversion of Analog to Spiking Neural Networks Using Sparse Temporal Coding},
+  booktitle = {2018 {{IEEE International Symposium}} on {{Circuits}} and {{Systems}} ({{ISCAS}})},
+  author = {Rueckauer, Bodo and Liu, Shih-Chii},
+  date = {2018-05},
+  pages = {1--5},
+  doi = {10.1109/ISCAS.2018.8351295},
+  abstract = {The activations of an analog neural network (ANN) are usually treated as representing an analog firing rate. When mapping the ANN onto an equivalent spiking neural network (SNN), this rate-based conversion can lead to undesired increases in computation cost and memory access, if firing rates are high. This work presents an efficient temporal encoding scheme, where the analog activation of a neuron in the ANN is treated as the instantaneous firing rate given by the time-to-first-spike (TTFS) in the converted SNN. By making use of temporal information carried by a single spike, we show a new spiking network model that uses 7-10× fewer operations than the original rate-based analog model on the MNIST handwritten dataset, with an accuracy loss of {$<$}; 1\%.},
+  eventtitle = {2018 {{IEEE International Symposium}} on {{Circuits}} and {{Systems}} ({{ISCAS}})},
+  keywords = {analog neural network,ANN,Biological neural networks,computation cost,Computational modeling,encoding,Encoding,Hardware,Mathematical model,memory access,MNIST handwritten dataset,neural nets,SNN,sparse temporal coding,spiking neural network,temporal encoding scheme,temporal information,time-to-first-spike,TTFS}
+}
+
+@article{rueckauerConversionContinuousValuedDeep2017,
+  title = {Conversion of {{Continuous}}-{{Valued Deep Networks}} to {{Efficient Event}}-{{Driven Networks}} for {{Image Classification}}},
+  author = {Rueckauer, Bodo and Lungu, Iulia-Alexandra and Hu, Yuhuang and Pfeiffer, Michael and Liu, Shih-Chii},
+  date = {2017},
+  journaltitle = {Frontiers in Neuroscience},
+  shortjournal = {Front. Neurosci.},
+  volume = {11},
+  issn = {1662-453X},
+  doi = {10.3389/fnins.2017.00682},
+  url = {https://www.frontiersin.org/articles/10.3389/fnins.2017.00682/full},
+  urldate = {2020-03-09},
+  abstract = {Spiking neural networks (SNNs) can potentially offer an efficient way of doing inference because the neurons in the networks are sparsely activated and computations are event-driven. Previous work showed that simple continuous-valued deep Convolutional Neural Networks (CNNs) can be converted into accurate spiking equivalents. These networks did not include certain common operations such as max-pooling, softmax, batch-normalization and Inception-modules. This paper presents spiking equivalents of these operations therefore allowing conversion of nearly arbitrary CNN architectures. We show conversion of popular CNN architectures, including VGG-16 and Inception-v3, into SNNs that produce the best results reported to date on MNIST, CIFAR-10 and the challenging ImageNet dataset. SNNs can trade off classification error rate against the number of available operations whereas deep continuous-valued neural networks require a fixed number of operations to achieve their classification error rate. From the examples of LeNet for MNIST and BinaryNet for CIFAR-10, we show that with an increase in error rate of a few percentage points, the SNNs can achieve more than 2x reductions in operations compared to the original CNNs. This highlights the potential of SNNs in particular when deployed on power-efficient neuromorphic spiking neuron chips, for use in embedded applications.},
+  keywords = {artificial neural network,deep learning,deep networks,object classification,spiking network conversion,Spiking Neural network},
+  langid = {english}
+}
+
+@software{sanderdielemanLasagneFirst15,
+  title = {Lasagne: {{First}} Release.},
+  shorttitle = {Lasagne},
+  author = {Sander Dieleman and Jan Schlüter and Colin Raffel and Eben Olson and Søren Kaae Sønderby and Daniel Nouri and Daniel Maturana and Martin Thoma and Eric Battenberg and Jack Kelly and Jeffrey De Fauw and Michael Heilman and {diogo149} and Brian McFee and Hendrik Weideman and {takacsg84} and {peterderivaz} and Jon and {instagibbs} and Dr. Kashif Rasul and CongLiu and Britefury and Jonas Degrave},
+  date = {2015-08-13},
+  doi = {10.5281/zenodo.27878},
+  url = {https://zenodo.org/record/27878#.XoJJW4gzaMo},
+  urldate = {2020-03-30},
+  abstract = {core contributors, in alphabetical order: Eric Battenberg (@ebattenberg) Sander Dieleman (@benanne) Daniel Nouri (@dnouri) Eben Olson (@ebenolson) Aäron van den Oord (@avdnoord) Colin Raffel (@craffel) Jan Schlüter (@f0k) Søren Kaae Sønderby (@skaae) extra contributors, in chronological order: Daniel Maturana (@dimatura): documentation, cuDNN layers, LRN Jonas Degrave (@317070): get\_all\_param\_values() fix Jack Kelly (@JackKelly): help with recurrent layers Gábor Takács (@takacsg84): support broadcastable parameters in lasagne.updates Diogo Moitinho de Almeida (@diogo149): MNIST example fixes Brian McFee (@bmcfee): MaxPool2DLayer fix Martin Thoma (@MartinThoma): documentation Jeffrey De Fauw (@JeffreyDF): documentation, ADAM fix Michael Heilman (@mheilman): NonlinearityLayer, lasagne.random Gregory Sanders (@instagibbs): documentation fix Jon Crall (@erotemic): check for non-positive input shapes Hendrik Weideman (@hjweide): set\_all\_param\_values() test, MaxPool2DCCLayer fix Kashif Rasul (@kashif): ADAM simplification Peter de Rivaz (@peterderivaz): documentation fix},
+  organization = {{Zenodo}}
+}
+
+@article{sathyaComparisonSupervisedUnsupervised2013,
+  title = {Comparison of Supervised and Unsupervised Learning Algorithms for Pattern Classification},
+  author = {Sathya, R. and Abraham, Annamma},
+  date = {2013},
+  journaltitle = {International Journal of Advanced Research in Artificial Intelligence},
+  volume = {2},
+  pages = {34--38},
+  number = {2}
+}
+
+@article{simonsReviewBinarized19,
+  title = {A {{Review}} of {{Binarized Neural Networks}}},
+  author = {Simons, Taylor and Lee, Dah-Jye},
+  date = {2019-06},
+  journaltitle = {Electronics},
+  volume = {8},
+  pages = {661},
+  publisher = {{Multidisciplinary Digital Publishing Institute}},
+  doi = {10.3390/electronics8060661},
+  url = {https://www.mdpi.com/2079-9292/8/6/661},
+  urldate = {2020-03-25},
+  abstract = {In this work, we review Binarized Neural Networks (BNNs). BNNs are deep neural networks that use binary values for activations and weights, instead of full precision values. With binary values, BNNs can execute computations using bitwise operations, which reduces execution time. Model sizes of BNNs are much smaller than their full precision counterparts. While the accuracy of a BNN model is generally less than full precision models, BNNs have been closing accuracy gap and are becoming more accurate on larger datasets like ImageNet. BNNs are also good candidates for deep learning implementations on FPGAs and ASICs due to their bitwise efficiency. We give a tutorial of the general BNN methodology and review various contributions, implementations and applications of BNNs.},
+  issue = {6},
+  keywords = {Binarized Neural Networks,deep learning,deep neural network compression,Deep Neural Networks,digital design,FPGA},
+  langid = {english},
+  number = {6}
+}
+
+@report{stewartTechnicalOverviewNeural2012,
+  title = {A {{Technical Overview}} of the {{Neural Engineering Framework}}},
+  author = {Stewart, Terrence C},
+  date = {2012},
+  institution = {{Centre for Theoretical Neuroscience, University of Waterloo}},
+  langid = {english}
+}
+
+@article{stimbergBrianIntuitiveEfficient2019,
+  title = {Brian 2: An Intuitive and Efficient Neural Simulator},
+  author = {Stimberg, Marcel and Brette, Romain and Goodman, Dan FM},
+  date = {2019},
+  journaltitle = {eLife},
+  shortjournal = {eLife},
+  volume = {8},
+  issn = {2050-084X},
+  doi = {10.7554/eLife.47314},
+  url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6786860/},
+  urldate = {2020-03-11},
+  abstract = {Brian 2 allows scientists to simply and efficiently simulate spiking neural network models. These models can feature novel dynamical equations, their interactions with the environment, and experimental protocols. To preserve high performance when defining new models, most simulators offer two options: low-level programming or description languages. The first option requires expertise, is prone to errors, and is problematic for reproducibility. The second option cannot describe all aspects of a computational experiment, such as the potentially complex logic of a stimulation protocol. Brian addresses these issues using runtime code generation. Scientists write code with simple and concise high-level descriptions, and Brian transforms them into efficient low-level code that can run interleaved with their code. We illustrate this with several challenging examples: a plastic model of the pyloric network, a closed-loop sensorimotor model, a programmatic exploration of a neuron model, and an auditory model with real-time input., Simulating the brain starts with understanding the activity of a single neuron. From there, it quickly gets very complicated. To reconstruct the brain with computers, neuroscientists have to first understand how one brain cell communicates with another using electrical and chemical signals, and then describe these events using code. At this point, neuroscientists can begin to build digital copies of complex neural networks to learn more about how those networks interpret and process information., To do this, computational neuroscientists have developed simulators that take models for how the brain works to simulate neural networks. These simulators need to be able to express many different models, simulate these models accurately, and be relatively easy to use. Unfortunately, simulators that can express a wide range of models tend to require technical expertise from users, or perform poorly; while those capable of simulating models efficiently can only do so for a limited number of models. An approach to increase the range of models simulators can express is to use so-called ‘model description languages’. These languages describe each element within a model and the relationships between them, but only among a limited set of possibilities, which does not include the environment. This is a problem when attempting to simulate the brain, because a brain is precisely supposed to interact with the outside world., Stimberg et al. set out to develop a simulator that allows neuroscientists to express several neural models in a simple way, while preserving high performance, without using model description languages. Instead of describing each element within a specific model, the simulator generates code derived from equations provided in the model. This code is then inserted into the computational experiments. This means that the simulator generates code specific to each model, allowing it to perform well across a range of models. The result, Brian 2, is a neural simulator designed to overcome the rigidity of other simulators while maintaining performance., Stimberg et al. illustrate the performance of Brian 2 with a series of computational experiments, showing how Brian 2 can test unconventional models, and demonstrating how users can extend the code to use Brian 2 beyond its built-in capabilities.},
+  eprint = {31429824},
+  eprinttype = {pmid},
+  pmcid = {PMC6786860}
+}
+
+@article{tavanaeiDeepLearningSpiking2019,
+  title = {Deep Learning in Spiking Neural Networks},
+  author = {Tavanaei, Amirhossein and Ghodrati, Masoud and Kheradpisheh, Saeed Reza and Masquelier, Timothée and Maida, Anthony},
+  date = {2019-03-01},
+  journaltitle = {Neural Networks},
+  shortjournal = {Neural Networks},
+  volume = {111},
+  pages = {47--63},
+  issn = {0893-6080},
+  doi = {10.1016/j.neunet.2018.12.002},
+  url = {http://www.sciencedirect.com/science/article/pii/S0893608018303332},
+  urldate = {2020-03-11},
+  abstract = {In recent years, deep learning has revolutionized the field of machine learning, for computer vision in particular. In this approach, a deep (multilayer) artificial neural network (ANN) is trained, most often in a supervised manner using backpropagation. Vast amounts of labeled training examples are required, but the resulting classification accuracy is truly impressive, sometimes outperforming humans. Neurons in an ANN are characterized by a single, static, continuous-valued activation. Yet biological neurons use discrete spikes to compute and transmit information, and the spike times, in addition to the spike rates, matter. Spiking neural networks (SNNs) are thus more biologically realistic than ANNs, and are arguably the only viable option if one wants to understand how the brain computes at the neuronal description level. The spikes of biological neurons are sparse in time and space, and event-driven. Combined with bio-plausible local learning rules, this makes it easier to build low-power, neuromorphic hardware for SNNs. However, training deep SNNs remains a challenge. Spiking neurons’ transfer function is usually non-differentiable, which prevents using backpropagation. Here we review recent supervised and unsupervised methods to train deep SNNs, and compare them in terms of accuracy and computational cost. The emerging picture is that SNNs still lag behind ANNs in terms of accuracy, but the gap is decreasing, and can even vanish on some tasks, while SNNs typically require many fewer operations and are the better candidates to process spatio-temporal data.},
+  keywords = {Biological plausibility,Deep learning,Machine learning,Power-efficient architecture,Spiking neural network},
+  langid = {english}
+}
+
+@article{tikidji-hamburyanSoftwareBrainNetwork2017,
+  title = {Software for {{Brain Network Simulations}}: {{A Comparative Study}}},
+  shorttitle = {Software for {{Brain Network Simulations}}},
+  author = {Tikidji-Hamburyan, Ruben A. and Narayana, Vikram and Bozkus, Zeki and El-Ghazawi, Tarek A.},
+  date = {2017},
+  journaltitle = {Frontiers in Neuroinformatics},
+  shortjournal = {Front. Neuroinform.},
+  volume = {11},
+  pages = {46},
+  issn = {1662-5196},
+  doi = {10.3389/fninf.2017.00046},
+  url = {https://www.frontiersin.org/articles/10.3389/fninf.2017.00046/full},
+  urldate = {2020-03-11},
+  abstract = {Numerical simulations of brain networks are a critical part of our efforts in understanding brain functions under pathological and normal conditions. For several decades, the community has developed many software packages and simulators to accelerate research in Computational Neuroscience. In this paper, we select the three most popular simulators, as determined by the number of models in the ModelDB database: NEURON, GENESIS, and BRIAN, and perform an independent evaluation of these simulators. In addition, we also study NEST, one of the lead simulators of the Human Brain Project. First, we study them based on one of the most important characteristics: the range of supported models. Our investigation reveals that brain network simulators may be biased toward supporting a specific set of models. However, all simulators tend to expand the supported range of models by providing a universal environment for the computational study of individual neurons and brain networks. Next, our investigations on the characteristics of computational architecture and efficiency indicate that all simulators compile the most computationally intensive procedures into binary code, with the aim of maximizing their computational performance. However, not all simulators provide the simplest method for module development and/or guarantee efficient binary code. Thirdly, a study of their amenability for high-performance computing reveals that NEST can almost transparently map an existing model on a cluster or multicore computer, while NEURON requires code modification if the model developed for a single computer has to be mapped on a computational cluster. Interestingly, parallelization is the weakest characteristic of BRIAN, which provides no support for cluster computations and limited support for multicore computers. Fourth, we identify the level of user support and frequency of usage for all simulators. Finally, we carry out an evaluation using two case studies; a large network with simplified neural and synaptic models, and a small network with detailed models. These two case studies allow us to avoid any bias towards a particular software package. The results indicate that BRIAN provides the most concise language for both cases considered. Furthermore, as expected, NEST mostly favors large network models, while NEURON is better suited for detailed models.},
+  keywords = {Brain Network Simulators,comparative study,computational neuroscience,conductance based model,phenomenological model},
+  langid = {english}
+}
+
+@article{zambranoFastEfficientAsynchronous2016,
+  title = {Fast and {{Efficient Asynchronous Neural Computation}} with {{Adapting Spiking Neural Networks}}},
+  author = {Zambrano, Davide and Bohte, Sander M.},
+  date = {2016-09-07},
+  url = {http://arxiv.org/abs/1609.02053},
+  urldate = {2020-03-11},
+  abstract = {Biological neurons communicate with a sparing exchange of pulses - spikes. It is an open question how real spiking neurons produce the kind of powerful neural computation that is possible with deep artificial neural networks, using only so very few spikes to communicate. Building on recent insights in neuroscience, we present an Adapting Spiking Neural Network (ASNN) based on adaptive spiking neurons. These spiking neurons efficiently encode information in spike-trains using a form of Asynchronous Pulsed Sigma-Delta coding while homeostatically optimizing their firing rate. In the proposed paradigm of spiking neuron computation, neural adaptation is tightly coupled to synaptic plasticity, to ensure that downstream neurons can correctly decode upstream spiking neurons. We show that this type of network is inherently able to carry out asynchronous and event-driven neural computation, while performing identical to corresponding artificial neural networks (ANNs). In particular, we show that these adaptive spiking neurons can be drop in replacements for ReLU neurons in standard feedforward ANNs comprised of such units. We demonstrate that this can also be successfully applied to a ReLU based deep convolutional neural network for classifying the MNIST dataset. The ASNN thus outperforms current Spiking Neural Networks (SNNs) implementations, while responding (up to) an order of magnitude faster and using an order of magnitude fewer spikes. Additionally, in a streaming setting where frames are continuously classified, we show that the ASNN requires substantially fewer network updates as compared to the corresponding ANN.},
+  archivePrefix = {arXiv},
+  eprint = {1609.02053},
+  eprinttype = {arxiv},
+  keywords = {Computer Science - Neural and Evolutionary Computing},
+  primaryClass = {cs}
+}
+
+
