@@ -1,10 +1,11 @@
-\begin{landscape}
-    \chapter{Computation features of the simulators}
-    \begin{table}[htbp]
-        \centering
-        \begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|>{\raggedright\arraybackslash}X|}
+\chapter{Computation features of the simulators}
+\begin{table}[htbp]
+    \centering
+    \begin{sideways}
+        \begin{tabularx}{0.7\textheight}{|*{5}{X|}}
             \hline
                  & NEST & Neuron & Brian & Nengo \\
+            \hline
             \hline
             GPU computation support & No & Yes (coreNEURON library) & Yes (Brian2\-GeNN package) & Yes (OpenCL) \\
             \hline
@@ -12,10 +13,10 @@
             \hline
             support for distributed computations & Yes & Yes & No & Yes \\
             \hline
-             supported platforms & Linux, MacOS, IBM BlueGene & MS Windows, UNIX, Linux, OS X, IBM Blue Gene, Cray XT3 & Windows, Linux, OS X & Windows, Mac OS X, Linux, Intel Loihi \\
+             supported platforms & Linux,\newline macOS,\newline IBM BlueGene & Windows,\newline Linux,\newline macOS,\newline IBM BlueGene,\newline Cray XT3 & Windows,\newline Linux,\newline macOS & Windows,\newline macOS,\newline Linux,\newline Intel Loihi \\
              \hline
         \end{tabularx}
-        \caption{Parallelization, high-performance computation support and supported platforms. }
-        \label{tab:efficiency}
-    \end{table}
-\end{landscape}
+    \end{sideways}
+    \caption{Parallelization, high-performance computation support and supported platforms. }
+    \label{tab:efficiency}
+\end{table}

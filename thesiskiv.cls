@@ -17,7 +17,7 @@
 %
 % DEFAULT PAGE LAYOUT, etc.
 %
-\LoadClass[12pt,oneside]{report}
+\LoadClass[12pt,oneside,draft]{report}
 \RequirePackage{lmodern}
 \RequirePackage[czech,main=english]{babel}
 % select default language at the beginning of the document
