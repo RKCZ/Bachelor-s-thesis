@@ -2,19 +2,16 @@
 \begin{table}[htbp]
     \centering
     \begin{sideways}
-        \begin{tabularx}{0.7\textheight}{|*{5}{X|}}
-            \hline
-                 & NEST & Neuron & Brian & Nengo \\
-            % \hline
+        \begin{tabularx}{0.7\textheight}{*{5}{>{\raggedright\arraybackslash}X}}
+            \toprule
+             & NEST & Neuron & Brian & Nengo \\
+            \midrule
             %     Documentation website & \url{https://nest-simulator.readthedocs.io/} & \url{https://neuron.yale.edu/neuron/docs} & \url{https://brian2.readthedocs.io/} & \url{https://www.nengo.ai/documentation/} \\
-            \hline
-                A book describing the simulator & Computational Systems Neurobiology \cite{lenovereComputationalSystemsNeurobiology2012}
-                & The NEURON Book \cite{carnevaleNEURONBook06} & - & How to build a brain: A neural architecture for biological cognition \cite{eliasmithHowBuild13} \\
-            \hline
-                State of the documentation & minor lacks in the Python interface documentation & complete API reference, poorly arranged & minor lacks in API documentation & detailed API reference and tutorials \\
-            \hline
-                Is the source code for the tutorials available? & Yes & Yes & Yes & Yes \\
-            \hline
+            A book describing the simulator & Computational Systems Neurobiology \cite{lenovereComputationalSystemsNeurobiology2012}
+            & The NEURON Book \cite{carnevaleNEURONBook06} & & How to build a brain: A neural architecture for biological cognition \cite{eliasmithHowBuild13} \\
+            State of the documentation & minor lacks in the Python interface documentation & complete API reference, poorly arranged & minor lacks in API documentation & detailed API reference and tutorials \\
+            Is the source code for the tutorials available? & Yes & Yes & Yes & Yes \\
+            \bottomrule
         \end{tabularx}
     \end{sideways}
     \caption{Overview of the state of the documentation of the simulators. }

@@ -2,19 +2,15 @@
 \begin{table}[htbp]
     \centering
     \begin{sideways}
-        \begin{tabularx}{0.7\textheight}{|*{5}{X|}}
-            \hline
+        \begin{tabularx}{0.7\textheight}{*{5}{>{\raggedright\arraybackslash}X}}
+            \toprule
                  & NEST & Neuron & Brian & Nengo \\
-            \hline
-            \hline
+            \midrule
             GPU computation support & No & Yes (coreNEURON library) & Yes (Brian2\-GeNN package) & Yes (OpenCL) \\
-            \hline
             parallel computation support & Yes & Yes (special version) & In development (OpenMP) & Yes \\
-            \hline
             support for distributed computations & Yes & Yes & No & Yes \\
-            \hline
              supported platforms & Linux,\newline macOS,\newline IBM BlueGene & Windows,\newline Linux,\newline macOS,\newline IBM BlueGene,\newline Cray XT3 & Windows,\newline Linux,\newline macOS & Windows,\newline macOS,\newline Linux,\newline Intel Loihi \\
-             \hline
+             \bottomrule
         \end{tabularx}
     \end{sideways}
     \caption{Parallelization, high-performance computation support and supported platforms. }
