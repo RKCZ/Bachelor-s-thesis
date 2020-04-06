@@ -1,4 +1,19 @@
 
+@article{abadiTensorFlowLargeScale16,
+  title = {{{TensorFlow}}: {{Large}}-{{Scale Machine Learning}} on {{Heterogeneous Distributed Systems}}},
+  shorttitle = {{{TensorFlow}}},
+  author = {Abadi, Martín and Agarwal, Ashish and Barham, Paul and Brevdo, Eugene and Chen, Zhifeng and Citro, Craig and Corrado, Greg S. and Davis, Andy and Dean, Jeffrey and Devin, Matthieu and Ghemawat, Sanjay and Goodfellow, Ian and Harp, Andrew and Irving, Geoffrey and Isard, Michael and Jia, Yangqing and Jozefowicz, Rafal and Kaiser, Lukasz and Kudlur, Manjunath and Levenberg, Josh and Mane, Dan and Monga, Rajat and Moore, Sherry and Murray, Derek and Olah, Chris and Schuster, Mike and Shlens, Jonathon and Steiner, Benoit and Sutskever, Ilya and Talwar, Kunal and Tucker, Paul and Vanhoucke, Vincent and Vasudevan, Vijay and Viegas, Fernanda and Vinyals, Oriol and Warden, Pete and Wattenberg, Martin and Wicke, Martin and Yu, Yuan and Zheng, Xiaoqiang},
+  date = {2016-03-16},
+  url = {http://arxiv.org/abs/1603.04467},
+  urldate = {2020-04-05},
+  abstract = {TensorFlow is an interface for expressing machine learning algorithms, and an implementation for executing such algorithms. A computation expressed using TensorFlow can be executed with little or no change on a wide variety of heterogeneous systems, ranging from mobile devices such as phones and tablets up to large-scale distributed systems of hundreds of machines and thousands of computational devices such as GPU cards. The system is flexible and can be used to express a wide variety of algorithms, including training and inference algorithms for deep neural network models, and it has been used for conducting research and for deploying machine learning systems into production across more than a dozen areas of computer science and other fields, including speech recognition, computer vision, robotics, information retrieval, natural language processing, geographic information extraction, and computational drug discovery. This paper describes the TensorFlow interface and an implementation of that interface that we have built at Google. The TensorFlow API and a reference implementation were released as an open-source package under the Apache 2.0 license in November, 2015 and are available at www.tensorflow.org.},
+  archivePrefix = {arXiv},
+  eprint = {1603.04467},
+  eprinttype = {arxiv},
+  keywords = {Computer Science - Distributed; Parallel; and Cluster Computing,Computer Science - Machine Learning},
+  primaryClass = {cs}
+}
+
 @article{bekolayNengoPythonTool2014,
   title = {Nengo: A {{Python}} Tool for Building Large-Scale Functional Brain Models},
   shorttitle = {Nengo},
@@ -88,6 +103,18 @@
   date = {2015},
   url = {https://keras.io},
   urldate = {2020-03-30}
+}
+
+@thesis{chooSpaunExtending18,
+  ids = {chooSpaunExtending18a},
+  title = {Spaun 2.0: {{Extending}} the {{World}}’s {{Largest Functional Brain Model}}},
+  shorttitle = {Spaun 2.0},
+  author = {Choo, Feng-Xuan},
+  date = {2018-05-17},
+  institution = {{University of Waterloo}},
+  url = {https://uwspace.uwaterloo.ca/handle/10012/13308},
+  abstract = {Building large-scale brain models is one method used by theoretical neuroscientists to understand the way the human brain functions. Researchers typically use either a bottom-up approach, which focuses on the detailed modelling of various biological properties of the brain and places less importance on reproducing functional behaviour, or a top-down approach, which generally aim to reproduce the behaviour observed in real cognitive agents, but typically sacrifices adherence to constraints imposed by the neuro-biology. The focus of this thesis is Spaun, a large-scale brain model constructed using a combination of the bottom-up and top-down approaches to brain modelling. Spaun is currently the world’s largest functional brain model, capable of performing eight distinct cognitive tasks ranging from digit recognition to inductive reasoning. The thesis is organized to discuss three aspects of the Spaun model. First, it describes the original Spaun model, and explores how a top-down approach, known as the Semantic Pointer Architecture (SPA), has been combined with a bottom-up approach, known as the Neural Engineering Framework (NEF), to integrate six existing cognitive models into a unified cognitive model that is Spaun. Next, the thesis identifies some of the concerns with the original Spaun model, and show the modifications made to the network to remedy these issues. It also characterizes how the Spaun model was re-organized and re-implemented (to include the aforementioned modifications) as the Spaun 2.0 model. As part of the discussion of the Spaun 2.0 model, task performance results are presented that compare the original Spaun model and the re-implemented Spaun 2.0 model, demonstrating that the modifications to the Spaun 2.0 model have improved its accuracy on the working memory task, and the two induction tasks. Finally, three extensions to Spaun 2.0 are presented. These extensions take advantage of the re-organized Spaun model, giving Spaun 2.0 new capabilities – a motor system capable of adapting to unknown force fields applied to its arm; a visual system capable of processing 256×256 full-colour images; and the ability to follow general instructions. The Spaun model and architecture presented in this thesis demonstrate that by using the SPA and the NEF, it is not only possible to construct functional large-scale brain models, but to do so in a manner that supports complex extensions to the model. The final Spaun 2.0 model consists of approximately 6.6 million neurons, can perform 12 cognitive tasks, and has been demonstrated to reproduce behavioural and neurological data observed in natural cognitive agents.},
+  langid = {english}
 }
 
 @inproceedings{cireganMulticolumnDeep12,
@@ -334,7 +361,8 @@
   series = {Lecture {{Notes}} in {{Computer Science}}}
 }
 
-@article{perez-carrascoMappingFrameDriven13,
+@article{perez-carrascoMappingFrameDriven13a,
+  ids = {perez-carrascoMappingFrameDriven13},
   title = {Mapping from {{Frame}}-{{Driven}} to {{Frame}}-{{Free Event}}-{{Driven Vision Systems}} by {{Low}}-{{Rate Rate Coding}} and {{Coincidence Processing}}–{{Application}} to {{Feedforward ConvNets}}},
   author = {Pérez-Carrasco, José Antonio and Zhao, Bo and Serrano, Carmen and Acha, Begoña and Serrano-Gotarredona, Teresa and Chen, Shouchun and Linares-Barranco, Bernabé},
   date = {2013-11},
@@ -345,6 +373,7 @@
   doi = {10.1109/TPAMI.2013.71},
   abstract = {Event-driven visual sensors have attracted interest from a number of different research communities. They provide visual information in quite a different way from conventional video systems consisting of sequences of still images rendered at a given "frame rate." Event-driven vision sensors take inspiration from biology. Each pixel sends out an event (spike) when it senses something meaningful is happening, without any notion of a frame. A special type of event-driven sensor is the so-called dynamic vision sensor (DVS) where each pixel computes relative changes of light or "temporal contrast." The sensor output consists of a continuous flow of pixel events that represent the moving objects in the scene. Pixel events become available with microsecond delays with respect to "reality." These events can be processed "as they flow" by a cascade of event (convolution) processors. As a result, input and output event flows are practically coincident in time, and objects can be recognized as soon as the sensor provides enough meaningful events. In this paper, we present a methodology for mapping from a properly trained neural network in a conventional frame-driven representation to an event-driven representation. The method is illustrated by studying event-driven convolutional neural networks (ConvNet) trained to recognize rotating human silhouettes or high speed poker card symbols. The event-driven ConvNet is fed with recordings obtained from a real DVS camera. The event-driven ConvNet is simulated with a dedicated event-driven simulator and consists of a number of event-driven processing modules, the characteristics of which are obtained from individually manufactured hardware modules.},
   keywords = {Algorithms,bioinspired vision,cameras,coincidence processing,computer vision,convolutional neural network,convolutional neural networks,Data Compression,Decision Support Techniques,dedicated event-driven simulator,DVS,Dynamic range,dynamic vision sensor,event flow processing,event-driven neural networks,event-driven processing module,event-driven representation,event-driven visual sensor,Feature extraction,feedforward ConvNets,feedforward neural nets,frame-driven representation,frame-driven vision system,frame-free event-driven vision system,high speed vision,image coding,Image Interpretation; Computer-Assisted,image representation,low-rate rate coding,neural network mapping,Neural networks,Neural Networks (Computer),Neurons,object recognition,Pattern Recognition; Automated,Sensors,spiking neural networks,temporal contrast,visual information,Visualization,Voltage control},
+  note = {Conference Name: IEEE Transactions on Pattern Analysis and Machine Intelligence},
   number = {11}
 }
 
