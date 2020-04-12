@@ -258,6 +258,21 @@
   primaryClass = {cs}
 }
 
+@article{lecunGradientbasedLearning98,
+  title = {Gradient-Based Learning Applied to Document Recognition},
+  author = {Lecun, Y. and Bottou, L. and Bengio, Y. and Haffner, P.},
+  date = {1998-11},
+  journaltitle = {Proceedings of the IEEE},
+  volume = {86},
+  pages = {2278--2324},
+  issn = {1558-2256},
+  doi = {10.1109/5.726791},
+  abstract = {Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of 2D shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank cheque is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal cheques. It is deployed commercially and reads several million cheques per day.},
+  keywords = {2D shape variability,back-propagation,backpropagation,Character recognition,cheque reading,complex decision surface synthesis,convolution,convolutional neural network character recognizers,document recognition,document recognition systems,Feature extraction,field extraction,gradient based learning technique,gradient-based learning,graph transformer networks,GTN,handwritten character recognition,handwritten digit recognition task,Hidden Markov models,high-dimensional patterns,language modeling,Machine learning,Multi-layer neural network,multilayer neural networks,multilayer perceptrons,multimodule systems,Neural networks,optical character recognition,Optical character recognition software,Optical computing,Pattern recognition,performance measure minimization,Principal component analysis,segmentation recognition},
+  note = {Conference Name: Proceedings of the IEEE},
+  number = {11}
+}
+
 @article{leeTrainingDeepSpiking2016,
   title = {Training {{Deep Spiking Neural Networks Using Backpropagation}}},
   author = {Lee, Jun Haeng and Delbruck, Tobi and Pfeiffer, Michael},
@@ -533,6 +548,23 @@
   urldate = {2020-03-11},
   abstract = {Numerical simulations of brain networks are a critical part of our efforts in understanding brain functions under pathological and normal conditions. For several decades, the community has developed many software packages and simulators to accelerate research in Computational Neuroscience. In this paper, we select the three most popular simulators, as determined by the number of models in the ModelDB database: NEURON, GENESIS, and BRIAN, and perform an independent evaluation of these simulators. In addition, we also study NEST, one of the lead simulators of the Human Brain Project. First, we study them based on one of the most important characteristics: the range of supported models. Our investigation reveals that brain network simulators may be biased toward supporting a specific set of models. However, all simulators tend to expand the supported range of models by providing a universal environment for the computational study of individual neurons and brain networks. Next, our investigations on the characteristics of computational architecture and efficiency indicate that all simulators compile the most computationally intensive procedures into binary code, with the aim of maximizing their computational performance. However, not all simulators provide the simplest method for module development and/or guarantee efficient binary code. Thirdly, a study of their amenability for high-performance computing reveals that NEST can almost transparently map an existing model on a cluster or multicore computer, while NEURON requires code modification if the model developed for a single computer has to be mapped on a computational cluster. Interestingly, parallelization is the weakest characteristic of BRIAN, which provides no support for cluster computations and limited support for multicore computers. Fourth, we identify the level of user support and frequency of usage for all simulators. Finally, we carry out an evaluation using two case studies; a large network with simplified neural and synaptic models, and a small network with detailed models. These two case studies allow us to avoid any bias towards a particular software package. The results indicate that BRIAN provides the most concise language for both cases considered. Furthermore, as expected, NEST mostly favors large network models, while NEURON is better suited for detailed models.},
   keywords = {Brain Network Simulators,comparative study,computational neuroscience,conductance based model,phenomenological model},
+  langid = {english}
+}
+
+@article{varekaEvaluationConvolutional20,
+  title = {Evaluation of Convolutional Neural Networks Using a Large Multi-Subject {{P300}} Dataset},
+  author = {Vařeka, Lukáš},
+  date = {2020-04-01},
+  journaltitle = {Biomedical Signal Processing and Control},
+  shortjournal = {Biomedical Signal Processing and Control},
+  volume = {58},
+  pages = {101837},
+  issn = {1746-8094},
+  doi = {10.1016/j.bspc.2019.101837},
+  url = {http://www.sciencedirect.com/science/article/pii/S1746809419304185},
+  urldate = {2020-04-08},
+  abstract = {Deep neural networks (DNN) have been studied in various machine learning areas. For example, event-related potential (ERP) signal classification is a highly complex task potentially suitable for DNN as signal-to-noise ratio is low, and underlying spatial and temporal patterns display a large intra- and intersubject variability. Convolutional neural networks (CNN) have been compared with baseline traditional models, i.e. linear discriminant analysis (LDA) and support vector machines (SVM) for single trial classification using a large multi-subject publicly available P300 dataset of school-age children (138 males and 112 females). For single trial classification, classification accuracy stayed between 62\% and 64\% for all tested classification models. When applying the trained classification models to averaged trials, accuracy increased to 76–79\% without significant differences among classification models. CNN did not prove superior to baseline for the tested dataset. Comparison with related literature, limitations and future directions are discussed.},
+  keywords = {BCI,Convolutional neural networks,Event-related potentials,LDA,Machine learning,P300},
   langid = {english}
 }
 
