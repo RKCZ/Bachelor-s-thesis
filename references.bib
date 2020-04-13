@@ -258,6 +258,21 @@
   primaryClass = {cs}
 }
 
+@article{kingmaAdamMethod17,
+  title = {Adam: {{A Method}} for {{Stochastic Optimization}}},
+  shorttitle = {Adam},
+  author = {Kingma, Diederik P. and Ba, Jimmy},
+  date = {2017-01-29},
+  url = {http://arxiv.org/abs/1412.6980},
+  urldate = {2020-04-13},
+  abstract = {We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss AdaMax, a variant of Adam based on the infinity norm.},
+  archivePrefix = {arXiv},
+  eprint = {1412.6980},
+  eprinttype = {arxiv},
+  keywords = {Computer Science - Machine Learning},
+  primaryClass = {cs}
+}
+
 @article{lecunGradientbasedLearning98,
   title = {Gradient-Based Learning Applied to Document Recognition},
   author = {Lecun, Y. and Bottou, L. and Bengio, Y. and Haffner, P.},
@@ -268,8 +283,8 @@
   issn = {1558-2256},
   doi = {10.1109/5.726791},
   abstract = {Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of 2D shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank cheque is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal cheques. It is deployed commercially and reads several million cheques per day.},
+  eventtitle = {Proceedings of the {{IEEE}}},
   keywords = {2D shape variability,back-propagation,backpropagation,Character recognition,cheque reading,complex decision surface synthesis,convolution,convolutional neural network character recognizers,document recognition,document recognition systems,Feature extraction,field extraction,gradient based learning technique,gradient-based learning,graph transformer networks,GTN,handwritten character recognition,handwritten digit recognition task,Hidden Markov models,high-dimensional patterns,language modeling,Machine learning,Multi-layer neural network,multilayer neural networks,multilayer perceptrons,multimodule systems,Neural networks,optical character recognition,Optical character recognition software,Optical computing,Pattern recognition,performance measure minimization,Principal component analysis,segmentation recognition},
-  note = {Conference Name: Proceedings of the IEEE},
   number = {11}
 }
 
@@ -387,8 +402,8 @@
   issn = {1939-3539},
   doi = {10.1109/TPAMI.2013.71},
   abstract = {Event-driven visual sensors have attracted interest from a number of different research communities. They provide visual information in quite a different way from conventional video systems consisting of sequences of still images rendered at a given "frame rate." Event-driven vision sensors take inspiration from biology. Each pixel sends out an event (spike) when it senses something meaningful is happening, without any notion of a frame. A special type of event-driven sensor is the so-called dynamic vision sensor (DVS) where each pixel computes relative changes of light or "temporal contrast." The sensor output consists of a continuous flow of pixel events that represent the moving objects in the scene. Pixel events become available with microsecond delays with respect to "reality." These events can be processed "as they flow" by a cascade of event (convolution) processors. As a result, input and output event flows are practically coincident in time, and objects can be recognized as soon as the sensor provides enough meaningful events. In this paper, we present a methodology for mapping from a properly trained neural network in a conventional frame-driven representation to an event-driven representation. The method is illustrated by studying event-driven convolutional neural networks (ConvNet) trained to recognize rotating human silhouettes or high speed poker card symbols. The event-driven ConvNet is fed with recordings obtained from a real DVS camera. The event-driven ConvNet is simulated with a dedicated event-driven simulator and consists of a number of event-driven processing modules, the characteristics of which are obtained from individually manufactured hardware modules.},
+  eventtitle = {{{IEEE Transactions}} on {{Pattern Analysis}} and {{Machine Intelligence}}},
   keywords = {Algorithms,bioinspired vision,cameras,coincidence processing,computer vision,convolutional neural network,convolutional neural networks,Data Compression,Decision Support Techniques,dedicated event-driven simulator,DVS,Dynamic range,dynamic vision sensor,event flow processing,event-driven neural networks,event-driven processing module,event-driven representation,event-driven visual sensor,Feature extraction,feedforward ConvNets,feedforward neural nets,frame-driven representation,frame-driven vision system,frame-free event-driven vision system,high speed vision,image coding,Image Interpretation; Computer-Assisted,image representation,low-rate rate coding,neural network mapping,Neural networks,Neural Networks (Computer),Neurons,object recognition,Pattern Recognition; Automated,Sensors,spiking neural networks,temporal contrast,visual information,Visualization,Voltage control},
-  note = {Conference Name: IEEE Transactions on Pattern Analysis and Machine Intelligence},
   number = {11}
 }
 
