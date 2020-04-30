@@ -33,23 +33,17 @@ Standard classification benchmarks are usually used to compare the individual wo
 
 \begin{table}[htbp]
     \centering
-    \begin{tabularx}{\linewidth}{|>{\raggedright\arraybackslash}X|c|c|}
-    \hline
+    \begin{tabularx}{\linewidth}{>{\raggedright\arraybackslash}Xcc}
+    \toprule
         description & type & accuracy (\%) \\
-        \hline
-        \hline
+        \midrule
         Rate-based conversion of 7-layer CNN with max-pooling \cite{rueckauerConversionContinuousValuedDeep2017} & SNN & 99.44 \\
-        \hline
         Converted SNN with pulsed Sigma-Delta coding scheme \cite{zambranoFastEfficientAsynchronous2016} & SNN & 99.14 \\
-        \hline
         Converted Lenet-5 with TTFS temporal coding \cite{rueckauerConversionAnalogSpiking2018} & SNN & 98.57 \\
-        \hline
         Spiking CNN with low-pass backpropagation rule \cite{leeTrainingDeepSpiking2016} & SNN & 99.31 \\
-        \hline
         Branching \& Merging CNN with Homogenous filter capsules \cite{kalganovaBranchingMerging20} & ANN & 99.79 \\
-        \hline
         Multi-column deep neural network \cite{cireganMulticolumnDeep12} & ANN & 99.77 \\
-    \hline
+        \bottomrule
     \end{tabularx}
     \caption{Comparison of selected deep neural networks.}
     \label{tab:MNIST_benchmark}
