@@ -30,6 +30,8 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
 \RequirePackage[a4paper,left=37mm,right=37mm,top=33mm,bottom=40mm]{geometry}
+\RequirePackage[pdftex]{graphicx}
+\RequirePackage{pdfpages}
 \linespread{1.1}
 %
 % USER COMMANDS
@@ -104,9 +106,10 @@
   %
   \setcounter{page}{2}
   \thispagestyle{empty}
-  \hbox{}\vfill
-  {\centering\Huge\bfseries Místo této strany bude\\ zadání práce.\par}
-  \vfill\vfill
+%   \hbox{}\vfill
+%   {\centering\Huge\bfseries Místo této strany bude\\ zadání práce.\par}
+%   \vfill\vfill
+  \includepdf[pages=-]{images/assignment.pdf}
   %
   % DECLARATION PAGE
   %
