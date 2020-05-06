@@ -14,7 +14,7 @@ The input data were preprocessed in a similar fashion as in \cite{varekaEvaluati
 These preprocessed data were divided into training and test subsets by randomly picking out 25\% of the dataset samples into the test set. The test set was saved to the file system so it could be passed to SNN-TB during conversion later. \par
 The network architecture of the CNN model was replicated entirely from the original work. This model was cross-validated the same way as in the original article. That means 30 iterations of the Monte-Carlo cross-validation were performed, and each iteration held out 25\% of the training set to create validation subset. In each iteration, a new instance of the network was created and trained. The training was done in 30 epochs while early stopping with patience value of 5 was used. After that, the trained ANN was evaluated on the test set. 10\% of the dataset samples, which were used during the training, were saved for normalisation of the layer weights. SNN-TB did this normalisation before the conversion process. All the divisions of the dataset are shown in \cref{fig:gtn_data_spliting}.
 
-\begin{figure}[htb]
+\begin{figure}[htbp]
     \centering
     \includegraphics[width=\linewidth]{gtn_data_splitting}
     \caption{Data splitting. Proportions of the split are marked by percentages along the edges.}
